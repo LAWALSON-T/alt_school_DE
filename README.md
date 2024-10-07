@@ -111,26 +111,3 @@
 ---
 
 
-
-
-ecommerce_pipeline/
-│
-├── airflow/                     # Airflow DAGs and configurations
-│   ├── dags/
-│   └── config/
-│
-├── dbt/                         # dbt models and transformations
-│   ├── models/
-│   ├── macros/
-│   └── profiles.yml
-│
-├── data/                        # Data-related files like the BigQuery key
-│   └── key/
-│
-├── Dockerfile                   # Dockerfile for the dbt service
-├── docker-compose.yml           # Docker Compose configuration
-└── README.md                    # Instructions for setting up and running the project
-
-
----
-
