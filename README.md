@@ -44,28 +44,29 @@
    
 
 3. Configure Google Cloud Credentials:
+   Sign up , create dataset and get API KEY
    Ensure your BigQuery service account key is located within you project folder
    
 
-4. Build the Docker images:
+5. Build the Docker images:
    bash
    docker compose build
    
 
-5. Start the services:
+6. Start the services:
    bash
    docker compose up
    
 
-6. Run the ETL pipeline:
+7. Run the ETL pipeline:
    - Open Airflow at http://localhost:8080 and trigger the DAG that runs the ETL process (PostgreSQL to BigQuery).
    
-7. Run dbt transformations:
+8. Run dbt transformations:
    bash
    docker compose run dbt dbt run
    
 
-8. Inspect Results:
+9. Inspect Results:
    - Visit your BigQuery console and verify that the transformed data is loaded into the correct dataset.
 
 ---
