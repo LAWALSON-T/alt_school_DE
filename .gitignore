@@ -1,7 +1,8 @@
-airflow\logs
+airflow/logs
 .env
 *.log
 etl.py
 extract.py
+data/key
 key/
 mnt/
