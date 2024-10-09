@@ -149,6 +149,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile # This assumes the Dockerfile is in the root of your project
+      args:
+        GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS} 
     networks:
       - airflow_network
     volumes:
@@ -156,7 +158,7 @@ services:
       - ./mnt/c/Users/Lawalson/my_etl_project/data/key:/opt/airflow/data/key  # BigQuery service account key
     working_dir: /usr/app/dbt
     environment:
-      GOOGLE_APPLICATION_CREDENTIALS=${GOOGLE_APPLICATION_CREDENTIALS}
+      GOOGLE_APPLICATION_CREDENTIALS= ${GOOGLE_APPLICATION_CREDENTIALS}
     command: >
       /bin/bash -c "dbt deps && dbt run"
 
