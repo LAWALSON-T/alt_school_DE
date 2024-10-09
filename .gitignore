@@ -3,5 +3,5 @@ airflow\logs
 *.log
 etl.py
 extract.py
-key
-mnt
+key/
+mnt/
