@@ -32,8 +32,8 @@
 
 1. Clone the repository:
    bash
-   git clone https://github.com/your_username/ecommerce_pipeline.git
-   cd ecommerce_pipeline
+   git [clone (https://github.com/LAWALSON-T/alt_school_DE.git)]
+   cd alt_school_DE
    
 
 2. Set up environment variables:
@@ -41,9 +41,10 @@
    bash
    AIRFLOW_UID=50000
    AIRFLOW_IMAGE_NAME=apache/airflow:2.9.3
+   also among files provided is an env file containing tokens and passwords
    
 
-3. Configure Google Cloud Credentials:
+4. Configure Google Cloud Credentials:
    Sign up , create dataset and get API KEY
    Ensure your BigQuery service account key is located within you project folder
    
@@ -55,11 +56,11 @@
 
 6. Start the services:
    bash
-   docker compose up
+   docker compose up -d
    
 
 7. Run the ETL pipeline:
-   - Open Airflow at http://localhost:8080 and trigger the DAG that runs the ETL process (PostgreSQL to BigQuery).
+   - Open Airflow at http://localhost:8080 and trigger the DAG that runs the ETL process (PostgreSQL to BigQuery) if it didnt trigger automatically.
    
 8. Run dbt transformations:
    bash
