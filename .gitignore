@@ -1,3 +1,7 @@
 airflow\logs
 .env
 *.log
+etl.py
+extract.py
+key
+mnt
