@@ -45,7 +45,7 @@
    
 
 4. Configure Google Cloud Credentials:
-   Sign up , create dataset and get API KEY
+   In event there is an issue with the api key , please Sign up , create dataset and get API KEY
    Ensure your BigQuery service account key is located within you project folder
    
 
@@ -76,7 +76,6 @@
 
 1. Raw Models:
    - raw_orders.sql: Extracts data from the PostgreSQL orders table and stores it in BigQuery.
-   - raw_order_items.sql: Extracts data from the PostgreSQL order items table and stores it in BigQuery.
    
 2. Staging Models:
    - stg_orders.sql: Cleans and standardizes the raw orders data,making it easier to work with in subsequent transformations
