@@ -45,7 +45,7 @@
    
 
 4. Configure Google Cloud Credentials:
-   Sign up , create dataset and get API KEY
+   In event there is an issue with the api key , please Sign up , create dataset and get API KEY
    Ensure your BigQuery service account key is located within you project folder
    
 
